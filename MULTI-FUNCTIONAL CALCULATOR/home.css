@@ -1,0 +1,108 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    margin-top: 5vh;
+    border: 3px solid rgb(66, 61, 61);
+    border-radius: 15px;
+    height: 500px;
+    width: 300px;
+    background-color: black;
+}
+
+.cam {
+    margin: -2px auto auto auto;
+    border-radius: 10px 10px 50px 50px;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(66, 61, 61);
+}
+
+.cover-area {
+    height: 380px;
+}
+
+.mid-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.calculator-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,blue, white );
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.portfolio-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.all-apps-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none
+}
+
+.gallery-button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, yellow, red, blue, green);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    bottom: 0%;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.home-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+

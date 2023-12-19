@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding google icons  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- adding css  -->
+    <link rel="stylesheet" href="exchangerate.css">
+    <title>W-Exchange Rate</title>
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="cam"></div>
+
+        <div class="upper-area">
+
+            <div class="exch-head">
+                <a href="cal.html">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                </a>
+                <h6>Exchange Rate</h6>
+            </div>
+
+            <select class="from" id="sel1">
+                <option value="">Select One …</option>
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MVR">MVR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="UYU">UYU</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+            <input type="text" class="searchBox" placeholder="0.00" id="searchBox">
+
+            <select class="to" id="sel2">
+                <option value="">Select One …</option>
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MVR">MVR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="UYU">UYU</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+            <input type="text" class="searchBox2" placeholder="0.00" id="searchBox2">
+
+        </div>
+
+        <hr>
+
+        <div class="lower-area">
+            <button style="color:royalblue; background-color: rgba(65, 105, 225, 0.217);"
+                onclick="clrscrn()">AC</button>
+            <button style="color:royalblue; background-color: rgba(65, 105, 225, 0.217);" onclick="bckspace()">
+                <span class="material-symbols-outlined">backspace</span>
+            </button>
+            <button onclick="displ('+/-')"
+                style="color:royalblue; background-color: rgba(65, 105, 225, 0.217);">+/-</button>
+            <button style="color:royalblue; background-color: rgba(65, 105, 225, 0.217);">/</button>
+            <button onclick="displ('7')">7</button>
+            <button onclick="displ('8')">8</button>
+            <button onclick="displ('9')">9</button>
+            <button style="color:royalblue; background-color: rgba(65, 105, 225, 0.217);"
+                onclick="displ('*')">*</button>
+            <button onclick="displ('4')">4</button>
+            <button onclick="displ('5')">5</button>
+            <button onclick="displ('6')">6</button>
+            <button style="color:royalblue; background-color: rgba(65, 105, 225, 0.217);"
+                onclick="displ('-')">-</button>
+            <button onclick="displ('1')">1</button>
+            <button onclick="displ('2')">2</button>
+            <button onclick="displ('3')">3</button>
+            <button style="color:royalblue; background-color: rgba(65, 105, 225, 0.217);"
+                onclick="displ('+')">+</button>
+            <button onclick="displ('%')">%</button>
+            <button onclick="displ('0')">0</button>
+            <button onclick="displ('.')">.</button>
+            <button style="color:white; background-color: rgb(67, 142, 227);" onclick="solv()">=</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        const api = "https://api.exchangerate-api.com/v4/latest/USD";
+
+        let search = document.querySelector(".searchBox");
+        let search2 = document.querySelector(".searchBox2");
+        let fromCurrency = document.querySelector(".from");
+        let toCurrency = document.querySelector(".to");
+        let resultFrom;
+        let resultTo;
+
+        fromCurrency.addEventListener('change', (event) => {
+            resultFrom = `${event.target.value}`;
+            updateResults();
+        });
+
+        toCurrency.addEventListener('change', (event) => {
+            resultTo = `${event.target.value}`;
+            updateResults();
+        });
+
+        search.addEventListener('input', updateValue);
+
+        function updateValue(e) {
+            searchValue1 = e.target.value;
+            updateResults();
+        }
+
+        search2.addEventListener('input', updateValue2);
+
+        function updateValue2(e) {
+            searchValue2 = e.target.value;
+            updateResults();
+        }
+
+        function updateResults() {
+            fetch(api)
+                .then(currency => currency.json())
+                .then(displayResults);
+        }
+
+        function displayResults(currency) {
+            let fromRate = currency.rates[resultFrom];
+            let toRate = currency.rates[resultTo];
+
+            if (searchValue1) {
+                search2.value = ((toRate / fromRate) * searchValue1).toFixed(2);
+            } else if (searchValue2) {
+                search.value = ((fromRate / toRate) * searchValue2).toFixed(2);
+            }
+        }
+
+
+
+        // ..............This function will display value on screen ..............
+        function displ(value) {
+            document.getElementById("searchBox").value += value;
+        }
+
+        //.............This Function will clear the screen........................
+        function clrscrn() {
+            document.getElementById("searchBox").value = ""
+            document.getElementById("searchBox2").value = ""
+        }
+
+        //............... this function will escape a operation............
+        function bckspace() {
+            let screen = document.getElementById("searchBox").value;
+            document.getElementById("searchBox").value = screen.substring(0, screen.length - 1);
+        }
+
+    </script>
+</body>
+
+</html>
