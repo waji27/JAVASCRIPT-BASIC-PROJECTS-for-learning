@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #counter {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    button {
+      font-size: 16px;
+      margin: 0 10px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Simple Counter</title>
+</head>
+<body>
+
+  <h1>Simple Counter</h1>
+  
+  <div id="counter">0</div>
+  
+  <button onclick="increment()">Increment</button>
+  <button onclick="decrement()">Decrement</button>
+  <button onclick="reset()">Reset</button>
+
+  <script>
+    // Get the counter element
+    var counterElement = document.getElementById("counter");
+
+    // Counter variable
+    var counter = 0;
+
+    // Function to increment the counter
+    function increment() {
+      counter++;
+      counterElement.innerText = counter;
+    }
+
+    // Function to decrement the counter
+    function decrement() {
+      if (counter > 0) {
+        counter--;
+        counterElement.innerText = counter;
+      }
+    }
+
+    // Function to reset the counter
+    function reset() {
+      counter = 0;
+      counterElement.innerText = counter;
+    }
+  </script>
+
+</body>
+</html>

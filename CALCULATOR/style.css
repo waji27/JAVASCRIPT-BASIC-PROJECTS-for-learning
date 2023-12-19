@@ -15,8 +15,10 @@ body {
     min-width: 500px;
     height: 80vh;
     background-color: 397367;
-    border: 3px solid grey ;
+    border: 3px solid black ;
     margin-top: 5vh;
+    padding: 1vh;
+
 }
 
 .screen{
@@ -39,5 +41,4 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
     gap: 1vh;
-    padding: 1vh;
 }
